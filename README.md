@@ -7,14 +7,7 @@ Look at the [Content documentation](https://content.nuxt.com/) to learn more.
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
+make install
 ```
 
 ## Development Server
@@ -22,7 +15,7 @@ pnpm install
 Start the development server on <http://localhost:3000>
 
 ```bash
-npm run dev
+make dev
 ```
 
 ## Production
@@ -30,15 +23,13 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+make build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+make preview
 ```
 
 Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-> > > > > > > 2cd47f3 (setup nuxt3)
