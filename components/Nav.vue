@@ -15,6 +15,11 @@ const isCurrentPage = (path: string) => {
 <template>
   <div>
     <header class="header_wrapper">
+      <div class="header_logo_wrapper">
+        <nuxt-link to="/">
+          <img src="~/public/logo-wide.png" alt="Logo" />
+        </nuxt-link>
+      </div>
       <div class="header_btn_block_wrapper">
         <button class="hamburger" v-if="!activeMenu" @click="clickMenu">
           <img src="~/public/parts/hamburger-btn.svg" alt="Menu" />
@@ -123,11 +128,19 @@ const isCurrentPage = (path: string) => {
   padding-top: 16px;
   vertical-align: middle;
   width: 100%;
-  background-color: white;
+  background-color: #fffd;
   z-index: 998;
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.header_logo_wrapper {
+  padding: 0 1rem;
+
+  img {
+    width: 15%;
+  }
 }
 
 .hamburger {
