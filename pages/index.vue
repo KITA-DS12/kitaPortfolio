@@ -2,7 +2,9 @@
   <div class="container">
     <div class="spacer" />
     <div class="text">
-      <TextAnime :text="[`Hello World !`, `I'm KITA Ryota.`]" />
+      <TextAnime
+        :text="[`Hello World !`, `I'm KITA Ryota.`, `A Web Developer.`]"
+      />
     </div>
     <div class="spacer" />
     <img src="/code-and-music.png" alt="Code and Music with white background" />
