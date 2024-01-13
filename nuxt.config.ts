@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/content"],
+  components: [
+    {
+      path: "~/components",
+    },
+  ],
   app: {
     head: {
       htmlAttrs: {
