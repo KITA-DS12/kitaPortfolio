@@ -1,3 +1,8 @@
+<script setup lang="ts">
+definePageMeta({
+  layout: "home",
+});
+</script>
 <template>
   <div class="container">
     <div class="spacer" />
@@ -28,7 +33,7 @@
   font-size: 1.5rem;
 
   a {
-    color: #050;
+    color: #272;
     text-decoration: none;
   }
 }
