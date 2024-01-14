@@ -7,11 +7,11 @@ definePageMeta({
   <div class="container">
     <div class="spacer" />
     <div class="text">
-      <TextAnime :text="[`Hello World !`, `I'm KITA Ryota.`, `A Web Developer.`]" />
+      <TextAnime :text="[`Hi, I am KITA Ryota.`, `Web Developer & Creator`]" />
     </div>
     <div class="spacer" />
     <div class="profile-link">
-      <a href="/profile">▶︎ Profile</a>
+      <a href="/profile">▶︎ Explore my profile</a>
     </div>
     <div class="spacer" />
     <img src="/code-and-music.png" alt="Code and Music with white background" />
@@ -25,12 +25,12 @@ definePageMeta({
 }
 
 .text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .profile-link {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
   a {
     color: #272;
@@ -39,10 +39,11 @@ definePageMeta({
 }
 
 .spacer {
-  height: 2rem;
+  height: 2.5rem;
 }
 
 img {
   width: 60%;
+  max-width: 600px;
 }
 </style>
