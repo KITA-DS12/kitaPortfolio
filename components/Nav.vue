@@ -17,12 +17,12 @@ const isCurrentPage = (path: string) => {
     <header class="header_wrapper">
       <div class="header_logo_wrapper">
         <nuxt-link to="/">
-          <img src="~/public/logo-wide.png" alt="Logo" />
+          <img src="/logo-wide.png" alt="Logo" />
         </nuxt-link>
       </div>
       <div class="header_btn_block_wrapper">
         <button class="hamburger" v-if="!activeMenu" @click="clickMenu">
-          <img src="~/public/parts/hamburger-btn.svg" alt="Menu" />
+          <img src="/parts/hamburger-btn.svg" alt="Menu" />
         </button>
         <transition name="menu">
           <div class="menu" v-show="activeMenu">
@@ -30,7 +30,7 @@ const isCurrentPage = (path: string) => {
               <li>
                 <div>
                   <button class="close_btn" @click="clickMenu">
-                    <img src="~/public/parts/close-btn.svg" alt="Menu" />
+                    <img src="/parts/close-btn.svg" alt="Menu" />
                   </button>
                 </div>
               </li>
