@@ -1,6 +1,49 @@
 <template>
   <div class="container">
-    <div class="content"></div>
+    <div class="content">
+      <SkillCard name="Python" :level="4" :details="[
+        {
+          category: 'Web Development',
+          tags: ['FastAPI', 'Django', 'Flask', 'Streamlit', 'Requests'],
+        },
+        {
+          category: 'Data Science',
+          tags: [
+            'PyTorch',
+            'TensorFlow',
+            'Keras',
+            'scikit-learn',
+            'Pandas',
+            'NumPy',
+            'ONNX',
+            'SciPy',
+            'Matplotlib',
+            'Seaborn',
+            'NetworkX',
+          ],
+        },
+        {
+          category: 'Natural Language Processing',
+          tags: [
+            'transformers',
+            'MeCab',
+            'spaCy',
+            'NLTK',
+            'Janome',
+            'GiNZA',
+            'Gensim',
+          ],
+        },
+        {
+          category: 'Computer Vision',
+          tags: ['OpenCV', 'Pillow', 'MediaPipe'],
+        },
+        {
+          category: 'Web Scraping',
+          tags: ['Beautiful Soup', 'Selenium'],
+        },
+      ]" img="python" />
+    </div>
   </div>
 </template>
 
@@ -9,12 +52,5 @@
   height: 80vh;
   display: flex;
   justify-content: center;
-
-  background-image: url("~/public/skill-background.png");
-  background-color: rgba(240, 240, 234, 0.8);
-  background-blend-mode: lighten;
-  background-size: 65vw;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 </style>

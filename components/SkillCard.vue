@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
 
+type Details = {
+  category: string;
+  tags: string[];
+};
+
 const props = defineProps({
   name: {
     type: String,
@@ -10,8 +15,8 @@ const props = defineProps({
     type: Number,
     required: true,
   },
-  tags: {
-    type: Array<string>,
+  details: {
+    type: Array<Details>,
     required: true,
   },
   img: {
@@ -23,7 +28,7 @@ const props = defineProps({
 const name = props.name;
 const imgPath = `/logo/${props.img}.png`;
 const level = props.level;
-const tags = props.tags;
+const details = props.details;
 </script>
 <template>
   <div class="card">
@@ -32,8 +37,12 @@ const tags = props.tags;
     </div>
     <p>{{ name }}</p>
     <StarRating :value="level" />
-    <div class="tags">
-      <Tag v-for="tag in tags" :name="tag" :key="tag" />
+    <div class="details" v-for="detail in details" :key="detail.category">
+      <p>{{ detail.category }}</p>
+      <hr />
+      <div class="tags">
+        <Tag v-for="tag in detail.tags" :key="tag" :name="tag" />
+      </div>
     </div>
   </div>
 </template>
@@ -74,12 +83,32 @@ const tags = props.tags;
     max-height: 80%;
   }
 
-  .tags {
+  .details {
+    margin-top: 2rem;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      width: 50%;
+      background-color: #333;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 0.8rem;
+    }
   }
 }
 </style>
