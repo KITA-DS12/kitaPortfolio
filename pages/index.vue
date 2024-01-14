@@ -20,7 +20,6 @@ definePageMeta({
 <style lang="scss" scoped>
 .container {
   text-align: center;
-  font-family: monospace;
   color: #333;
 }
 
