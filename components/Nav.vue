@@ -136,10 +136,12 @@ const isCurrentPage = (path: string) => {
 }
 
 .header_logo_wrapper {
+  width: 100%;
   padding: 0 1rem;
 
   img {
-    width: 15%;
+    height: 12vw;
+    max-height: 64px;
   }
 }
 
@@ -147,7 +149,7 @@ const isCurrentPage = (path: string) => {
   @include disable_default_button_style;
 
   position: absolute;
-  top: 2.5rem;
+  top: 2.2rem;
   right: 2.5rem;
 }
 
@@ -165,7 +167,7 @@ const isCurrentPage = (path: string) => {
     @include disable_default_button_style;
 
     position: absolute;
-    top: 2rem;
+    top: 1.8rem;
     right: 2rem;
   }
 
@@ -200,13 +202,13 @@ const isCurrentPage = (path: string) => {
     gap: 5px;
 
     .title {
-      font-size: 2rem;
+      font-size: 1.75rem;
       font-weight: bold;
       color: #fff;
     }
 
     .sub_title {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: lighter;
       color: #ddd;
       margin-top: 0.3rem;
