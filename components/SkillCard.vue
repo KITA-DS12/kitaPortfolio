@@ -23,6 +23,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  others: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const name = props.name;
@@ -42,16 +46,20 @@ const toggleExpand = () => {
       <img :src="imgPath" :alt="name" />
     </div>
     <p>{{ name }}</p>
-    <StarRating :value="level" />
+    <div v-if="level > 0">
+      <StarRating :value="level" />
+    </div>
     <div class="details" v-for="detail in details" :key="detail.category">
-      <p>{{ detail.category }}</p>
-      <hr />
+      <div v-if="!others">
+        <p>{{ detail.category }}</p>
+        <hr />
+      </div>
       <div class="tags">
         <Tag v-for="tag in detail.tags" :key="tag" :name="tag" />
       </div>
     </div>
     <div class="spacer" />
-    <button class="expand-button" @click="toggleExpand">
+    <button v-if="!others" class="expand-button" @click="toggleExpand">
       {{ expanded ? "▲ 閉じる" : "▼ 続きを読む" }}
     </button>
   </div>
@@ -88,7 +96,7 @@ const toggleExpand = () => {
   .img-container {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 25%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -98,14 +106,13 @@ const toggleExpand = () => {
   }
 
   img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
   }
 
   .details {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
     width: 100%;
     display: flex;
     flex-direction: column;
