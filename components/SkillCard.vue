@@ -41,7 +41,7 @@ const toggleExpand = () => {
 };
 </script>
 <template>
-  <div class="card" :class="{ 'is-expanded': expanded }">
+  <div class="card" :class="{ 'is-expanded': expanded, 'not-others': !others }">
     <div class="img-container">
       <img :src="imgPath" :alt="name" />
     </div>
@@ -66,20 +66,11 @@ const toggleExpand = () => {
 </template>
 <style lang="scss" scoped>
 .card {
-  max-height: 35vh;
-  overflow: hidden;
-
-  &.is-expanded {
-    max-height: none;
-  }
-
-  position: relative;
-
   width: 65vw;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 1.5rem;
-  background-color: rgba(240, 240, 234, 0.5);
+  background-color: #fff8;
   backdrop-filter: blur(10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -88,7 +79,7 @@ const toggleExpand = () => {
   text-align: center;
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-top: 1rem;
   }
@@ -119,7 +110,7 @@ const toggleExpand = () => {
     align-items: center;
 
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-bottom: 0.4rem;
     }
 
@@ -131,6 +122,7 @@ const toggleExpand = () => {
     }
 
     .tags {
+      font-size: 0.8rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -160,5 +152,16 @@ const toggleExpand = () => {
       transform: translateX(-50%) translateY(-5px);
     }
   }
+}
+
+.card.not-others {
+  max-height: 35vh;
+  overflow: hidden;
+
+  &.is-expanded {
+    max-height: none;
+  }
+
+  position: relative;
 }
 </style>

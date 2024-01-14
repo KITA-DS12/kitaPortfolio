@@ -87,6 +87,18 @@
         img="go"
       />
       <SkillCard
+        name="Database"
+        :level="3"
+        :details="[
+          {
+            category: '-',
+            tags: ['MySQL', 'PostgreSQL', 'SQLite'],
+          },
+        ]"
+        img="postgresql"
+        :others="true"
+      />
+      <SkillCard
         name="Editor"
         :level="5"
         :details="[
@@ -128,7 +140,7 @@
         :details="[
           {
             category: '-',
-            tags: ['Git', 'GitHub', 'GitHub Actions', 'CircleCI', 'Jenkins'],
+            tags: ['Git', 'GitHub', 'GitHub Actions', 'Firebase', 'Supabase'],
           },
         ]"
         img="git"
