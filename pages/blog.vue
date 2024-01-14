@@ -1,3 +1,3 @@
 <template>
-  <NotFound />
+  <WorkInProgress />
 </template>
