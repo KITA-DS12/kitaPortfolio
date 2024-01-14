@@ -29,9 +29,15 @@ const name = props.name;
 const imgPath = `/logo/${props.img}.png`;
 const level = props.level;
 const details = props.details;
+
+const expanded = ref(false);
+
+const toggleExpand = () => {
+  expanded.value = !expanded.value;
+};
 </script>
 <template>
-  <div class="card">
+  <div class="card" :class="{ 'is-expanded': expanded }">
     <div class="img-container">
       <img :src="imgPath" :alt="name" />
     </div>
@@ -44,10 +50,23 @@ const details = props.details;
         <Tag v-for="tag in detail.tags" :key="tag" :name="tag" />
       </div>
     </div>
+    <div class="spacer" />
+    <button class="expand-button" @click="toggleExpand">
+      {{ expanded ? "▲ 閉じる" : "▼ 続きを読む" }}
+    </button>
   </div>
 </template>
 <style lang="scss" scoped>
 .card {
+  max-height: 35vh;
+  overflow: hidden;
+
+  &.is-expanded {
+    max-height: none;
+  }
+
+  position: relative;
+
   width: 65vw;
   margin: 1rem auto;
   padding: 1rem;
@@ -67,8 +86,8 @@ const details = props.details;
   }
 
   .img-container {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: white;
     display: flex;
@@ -79,8 +98,10 @@ const details = props.details;
   }
 
   img {
-    max-width: 80%;
-    max-height: 80%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .details {
@@ -108,6 +129,28 @@ const details = props.details;
       justify-content: center;
       gap: 5px;
       margin-top: 0.8rem;
+    }
+  }
+
+  .spacer {
+    height: 3rem;
+  }
+
+  .expand-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: #333e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #666e;
+      transform: translateX(-50%) translateY(-5px);
     }
   }
 }
