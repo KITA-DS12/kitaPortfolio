@@ -10,6 +10,10 @@ const props = defineProps({
     type: Number,
     required: true,
   },
+  description: {
+    type: Array<string>,
+    required: true,
+  },
   tags: {
     type: Array<string>,
     required: true,
@@ -17,10 +21,6 @@ const props = defineProps({
   img: {
     type: String,
     required: true,
-  },
-  others: {
-    type: Boolean,
-    default: false,
   },
 });
 
@@ -45,6 +45,11 @@ const tags = props.tags;
       </div>
     </div>
     <div class="details">
+      <div class="description">
+        <p v-for="text in description" :key="text">
+          {{ text }}
+        </p>
+      </div>
       <div class="tags">
         <Tag v-for="tag in tags" :key="tag" :name="tag" />
       </div>
@@ -126,6 +131,17 @@ const tags = props.tags;
       height: 1px;
       width: 50%;
       background-color: #333;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+      }
     }
 
     .tags {
