@@ -4,147 +4,85 @@
       <SkillCard
         name="Python"
         :level="4"
-        :details="[
-          {
-            category: 'Web Development',
-            tags: ['FastAPI', 'Django', 'Flask', 'Streamlit'],
-          },
-          {
-            category: 'Data Science',
-            tags: [
-              'PyTorch',
-              'TensorFlow',
-              'Keras',
-              'scikit-learn',
-              'Pandas',
-              'NumPy',
-              'ONNX',
-              'SciPy',
-              'Matplotlib',
-              'Seaborn',
-              'NetworkX',
-            ],
-          },
-          {
-            category: 'Natural Language Processing',
-            tags: [
-              'transformers',
-              'MeCab',
-              'spaCy',
-              'NLTK',
-              'Janome',
-              'GiNZA',
-              'Gensim',
-            ],
-          },
-          {
-            category: 'Computer Vision',
-            tags: ['OpenCV', 'Pillow', 'MediaPipe', 'OpenPose', 'Kapao'],
-          },
-          {
-            category: 'Web Scraping',
-            tags: ['Beautiful Soup', 'Selenium', 'Requests'],
-          },
-        ]"
+        :tags="['FastAPI', 'Django', 'Flask', 'Streamlit', 'Tornado']"
         img="python"
       />
       <SkillCard
         name="JavaScript / TypeScript"
         :level="3"
-        :details="[
-          {
-            category: 'Web Development',
-            tags: ['Vue.js', 'Nuxt.js', 'React', 'Express', 'Nest.js'],
-          },
-          {
-            category: 'Scripting',
-            tags: ['Google Apps Script'],
-          },
-        ]"
+        :tags="['Vue.js', 'Nuxt.js', 'React', 'Express', 'Nest.js']"
         img="typescript"
       />
       <SkillCard
         name="Go"
-        :level="2"
-        :details="[
-          {
-            category: 'Web Development',
-            tags: ['Gin', 'Echo', 'Gorilla', 'Beego', 'Fiber'],
-          },
-          {
-            category: 'Data Science',
-            tags: ['TensorFlow', 'ONNX'],
-          },
-          {
-            category: 'Natural Language Processing',
-            tags: ['Kagome'],
-          },
-          {
-            category: 'Computer Vision',
-            tags: ['GoCV'],
-          },
-        ]"
+        :level="3"
+        :tags="['Gin', 'Echo', 'Gorilla', 'Beego', 'Fiber']"
         img="go"
       />
       <SkillCard
-        name="Database"
+        name="HTML / CSS"
         :level="3"
-        :details="[
-          {
-            category: '-',
-            tags: ['MySQL', 'PostgreSQL', 'SQLite'],
-          },
-        ]"
-        img="postgresql"
-        :others="true"
+        :tags="['Sass', 'Bootstrap', 'Tailwind CSS']"
+        img="html5"
       />
-      <SkillCard
-        name="Editor"
-        :level="5"
-        :details="[
-          {
-            category: '-',
-            tags: ['Vim', 'Neovim'],
-          },
-        ]"
-        img="vim"
-        :others="true"
-      />
+      <SkillCard name="PHP" :level="2" :tags="['Symfony']" img="php" />
       <SkillCard
         name="Other Languages"
-        :level="0"
-        :details="[
-          {
-            category: '-',
-            tags: ['PHP', 'HTML', 'CSS', 'Vim Script', 'C', 'C#', 'Swift'],
-          },
+        :level="1"
+        :tags="[
+          'C',
+          'C#',
+          'C++',
+          'Google Apps Script',
+          'Shell Script',
+          'Swift',
         ]"
-        img="php"
-        :others="true"
+        img="c++"
       />
       <SkillCard
-        name="Infrastructure"
-        :level="0"
-        :details="[
-          {
-            category: '-',
-            tags: ['AWS', 'GCP', 'Docker', 'Docker Compose'],
-          },
+        name="SQL / Database"
+        :level="3"
+        :tags="['MySQL', 'PostgreSQL', 'SQLite']"
+        img="postgresql"
+      />
+      <SkillCard name="Editor" :level="5" :tags="['Vim', 'Neovim']" img="vim" />
+      <SkillCard
+        name="Amazon Web Services"
+        :level="2"
+        :tags="[
+          'API Gateway',
+          'CloudFormation',
+          'CloudFront',
+          'CloudWatch',
+          'EC2',
+          'Elastic Container Registry',
+          'Elastic Container Service',
+          'EventBridge',
+          'Lambda',
+          'RDS',
+          'Simple Notification Service',
+          'Simple Storage Service',
+          'Simple Queue Service',
+          'Route 53',
         ]"
         img="ec2"
-        :others="true"
       />
       <SkillCard
-        name="Others"
-        :level="0"
-        :details="[
-          {
-            category: '-',
-            tags: ['Git', 'GitHub', 'GitHub Actions', 'Firebase', 'Supabase'],
-          },
+        name="Google Cloud Platform"
+        :level="2"
+        :tags="[
+          'App Engine',
+          'BigQuery',
+          'Cloud Functions',
+          'Cloud Run',
+          'Cloud SQL',
+          'Cloud Storage',
+          'Compute Engine',
+          'Container Registry',
+          'Firestore',
+          'Firebase',
         ]"
-        img="git"
-        :others="true"
+        img="app_engine"
       />
     </div>
   </div>

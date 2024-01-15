@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
 
-type Details = {
-  category: string;
-  tags: string[];
-};
-
 const props = defineProps({
   name: {
     type: String,
@@ -15,8 +10,8 @@ const props = defineProps({
     type: Number,
     required: true,
   },
-  details: {
-    type: Array<Details>,
+  tags: {
+    type: Array<string>,
     required: true,
   },
   img: {
@@ -32,16 +27,10 @@ const props = defineProps({
 const name = props.name;
 const imgPath = `/logo/${props.img}.png`;
 const level = props.level;
-const details = props.details;
-
-const expanded = ref(false);
-
-const toggleExpand = () => {
-  expanded.value = !expanded.value;
-};
+const tags = props.tags;
 </script>
 <template>
-  <div class="card" :class="{ 'is-expanded': expanded, 'not-others': !others }">
+  <div class="card">
     <div class="top-section">
       <div class="img-container">
         <div class="img-content">
@@ -55,24 +44,16 @@ const toggleExpand = () => {
         </div>
       </div>
     </div>
-    <div class="details" v-for="detail in details" :key="detail.category">
-      <div v-if="!others">
-        <p>{{ detail.category }}</p>
-        <hr />
-      </div>
+    <div class="details">
       <div class="tags">
-        <Tag v-for="tag in detail.tags" :key="tag" :name="tag" />
+        <Tag v-for="tag in tags" :key="tag" :name="tag" />
       </div>
     </div>
-    <div class="spacer" />
-    <button v-if="!others" class="expand-button" @click="toggleExpand">
-      {{ expanded ? "▲ 閉じる" : "▼ 続きを読む" }}
-    </button>
   </div>
 </template>
 <style lang="scss" scoped>
 .card {
-  width: 65vw;
+  width: 50vw;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 1.5rem;
@@ -90,13 +71,13 @@ const toggleExpand = () => {
     width: 100%;
 
     .img-container {
-      flex-basis: 30%;
+      flex-basis: 25%;
       display: flex;
       justify-content: flex-end;
 
       .img-content {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         border-radius: 25%;
         background-color: white;
         display: flex;
@@ -115,13 +96,13 @@ const toggleExpand = () => {
     }
 
     .info {
-      flex-basis: 70%;
+      flex-basis: 75%;
       display: flex;
       flex-direction: column;
       align-items: center;
 
       p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: bold;
         margin-top: 1rem;
       }
@@ -156,38 +137,5 @@ const toggleExpand = () => {
       margin-top: 0.8rem;
     }
   }
-
-  .spacer {
-    height: 3rem;
-  }
-
-  .expand-button {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    background-color: #333e;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #666e;
-      transform: translateX(-50%) translateY(-5px);
-    }
-  }
-}
-
-.card.not-others {
-  max-height: 20vh;
-  overflow: hidden;
-
-  &.is-expanded {
-    max-height: none;
-  }
-
-  position: relative;
 }
 </style>
