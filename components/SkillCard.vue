@@ -42,12 +42,18 @@ const toggleExpand = () => {
 </script>
 <template>
   <div class="card" :class="{ 'is-expanded': expanded, 'not-others': !others }">
-    <div class="img-container">
-      <img :src="imgPath" :alt="name" />
-    </div>
-    <p>{{ name }}</p>
-    <div v-if="level > 0">
-      <StarRating :value="level" />
+    <div class="top-section">
+      <div class="img-container">
+        <div class="img-content">
+          <img :src="imgPath" :alt="name" />
+        </div>
+      </div>
+      <div class="info">
+        <p>{{ name }}</p>
+        <div v-if="level > 0">
+          <StarRating :value="level" />
+        </div>
+      </div>
     </div>
     <div class="details" v-for="detail in details" :key="detail.category">
       <div v-if="!others">
@@ -78,29 +84,48 @@ const toggleExpand = () => {
   align-items: center;
   text-align: center;
 
-  p {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-
-  .img-container {
-    width: 80px;
-    height: 80px;
-    border-radius: 25%;
-    background-color: white;
+  .top-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+    width: 100%;
 
-  img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+    .img-container {
+      flex-basis: 30%;
+      display: flex;
+      justify-content: flex-end;
+
+      .img-content {
+        width: 80px;
+        height: 80px;
+        border-radius: 25%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .info {
+      flex-basis: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+    }
   }
 
   .details {
@@ -156,7 +181,7 @@ const toggleExpand = () => {
 }
 
 .card.not-others {
-  max-height: 35vh;
+  max-height: 20vh;
   overflow: hidden;
 
   &.is-expanded {
