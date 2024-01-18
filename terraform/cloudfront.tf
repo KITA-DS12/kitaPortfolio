@@ -53,7 +53,7 @@ resource "aws_cloudfront_distribution" "site" {
 }
 
 resource "aws_cloudfront_origin_access_control" "main" {
-  name                              = "s3-access-control-${var.site_domain}}"
+  name                              = "s3-access-control-${var.site_domain}"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
   signing_protocol                  = "sigv4"
