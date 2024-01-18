@@ -3,6 +3,8 @@ locals {
 }
 
 resource "aws_cloudfront_distribution" "site" {
+  aliases = [var.site_domain]
+
   origin {
     connection_attempts      = 3
     connection_timeout       = 10
@@ -44,12 +46,14 @@ resource "aws_cloudfront_distribution" "site" {
   price_class = "PriceClass_200"
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn      = aws_acm_certificate_validation.acm_cert.certificate_arn
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1"
   }
 }
 
 resource "aws_cloudfront_origin_access_control" "main" {
-  name                              = "s3-access-control"
+  name                              = "s3-access-control-${var.site_domain}}"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
   signing_protocol                  = "sigv4"
