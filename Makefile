@@ -9,6 +9,7 @@ help:
 	@echo "  make generate    Generate static site"
 	@echo "  make typecheck   Typecheck"
 	@echo "  make upgrade     Upgrade dependencies"
+	@echo "  make upload      Upload to S3"
 
 .PHONY: info
 info:
@@ -38,7 +39,7 @@ preview:
 .PHONY: generate
 generate:
 	@echo "Generating..."
-	bun run nuxi generate
+	bun run nuxt generate
 
 .PHONY: typecheck
 typecheck:
@@ -49,3 +50,7 @@ typecheck:
 upgrade:
 	@echo "Upgrading..."
 	bun run nuxi upgrade
+
+.PHONY: upload
+upload:
+	aws s3 sync ./.output/public/ s3://portfolio-xn--djr-net/
