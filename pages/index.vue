@@ -11,7 +11,9 @@ definePageMeta({
     </div>
     <div class="spacer" />
     <div class="profile-link">
-      <a href="/profile">▶︎ Explore my profile</a>
+      <nuxt-link to="/profile">
+        <span>▶︎ Explore my profile</span>
+      </nuxt-link>
     </div>
     <div class="spacer" />
     <img src="/code-and-music.png" alt="Code and Music with white background" />
@@ -32,8 +34,11 @@ definePageMeta({
   font-size: 1.2rem;
 
   a {
-    color: #272;
     text-decoration: none;
+  }
+
+  span {
+    color: #272;
   }
 }
 
