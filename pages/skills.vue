@@ -19,7 +19,6 @@
         :description="[
           '主にWebアプリケーションのフロントエンド開発に使用。',
           '業務では、Vue.jsを用いることが多い。',
-          'バックエンド開発ではExpressをベースにしたNest.jsを用いることが多い。',
           'その他にも、バッチ処理やGoogle Apps Scriptの開発にも使用。',
         ]"
         :tags="['Vue.js', 'Nuxt.js', 'React', 'Express', 'Nest.js']"
@@ -59,7 +58,7 @@
           '趣味でC#・Unityを用いたゲーム開発やSwiftを用いたiOSアプリ開発などの経験あり。',
         ]"
         :tags="['C', 'C#', 'C++', 'Shell Script', 'Swift']"
-        img="c++"
+        img="c_plus"
       />
       <SkillCard
         name="SQL / Database"
@@ -87,19 +86,18 @@
           '業務や個人開発にて、Webアプリケーションのインフラ構築に使用。',
         ]"
         :tags="[
-          'API Gateway',
-          'CloudFormation',
+          'ACM',
           'CloudFront',
           'CloudWatch',
           'EC2',
-          'Elastic Container Registry',
-          'Elastic Container Service',
+          'ECR',
+          'ECS',
           'EventBridge',
           'Lambda',
           'RDS',
-          'Simple Notification Service',
-          'Simple Storage Service',
-          'Simple Queue Service',
+          'SNS',
+          'S3',
+          'SQS',
           'Route 53',
         ]"
         img="ec2"
