@@ -15,13 +15,6 @@ const isCurrentPage = (path: string) => {
 <template>
   <div class="menu">
     <ul>
-      <!-- <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/') }"> -->
-      <!--   <nuxt-link to="/"> -->
-      <!--     <div class="nav_tab_container"> -->
-      <!--       <span class="title">HOME</span> -->
-      <!--     </div> -->
-      <!--   </nuxt-link> -->
-      <!-- </li> -->
       <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/profile') }">
         <nuxt-link to="/profile">
           <div class="nav_tab_container">
@@ -47,13 +40,6 @@ const isCurrentPage = (path: string) => {
         <nuxt-link to="/awards">
           <div class="nav_tab_container">
             <span class="title">AWARDS</span>
-          </div>
-        </nuxt-link>
-      </li>
-      <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/blog') }">
-        <nuxt-link to="/blog">
-          <div class="nav_tab_container">
-            <span class="title">BLOG</span>
           </div>
         </nuxt-link>
       </li>

@@ -74,14 +74,6 @@ const isCurrentPage = (path: string) => {
                   </div>
                 </nuxt-link>
               </li>
-              <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/blog') }">
-                <nuxt-link to="/blog">
-                  <div class="nav_tab_container">
-                    <span class="title">BLOG</span>
-                    <span class="sub_title">ブログ</span>
-                  </div>
-                </nuxt-link>
-              </li>
             </ul>
           </div>
         </transition>
