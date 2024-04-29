@@ -102,7 +102,7 @@ const isCurrentPage = (path: string) => {
   padding-top: 16px;
   vertical-align: middle;
   width: 100%;
-  background-color: #f0f0eadd;
+  background-color: #f0f0f0dd;
   z-index: 998;
   position: fixed;
   top: 0;
@@ -151,11 +151,11 @@ const isCurrentPage = (path: string) => {
 
     &.current-page {
       .title {
-        color: #009688;
+        color: #5C967C;
       }
 
       .sub_title {
-        color: #009688;
+        color: #5C967C;
       }
     }
   }
@@ -178,13 +178,13 @@ const isCurrentPage = (path: string) => {
     .title {
       font-size: 1.75rem;
       font-weight: bold;
-      color: #fff;
+      color: #bbb;
     }
 
     .sub_title {
       font-size: 1rem;
       font-weight: lighter;
-      color: #ddd;
+      color: #999;
       margin-top: 0.3rem;
       margin-bottom: 2rem;
     }
@@ -193,7 +193,7 @@ const isCurrentPage = (path: string) => {
 
       .title,
       .sub_title {
-        color: #009688;
+        color: #5C967C;
       }
     }
   }

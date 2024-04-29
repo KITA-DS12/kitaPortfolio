@@ -54,9 +54,9 @@
 }
 
 .profile-image {
-  width: 35vw;
-  height: 35vw;
-  border-radius: 30%;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 10%;
 }
 
 .description {

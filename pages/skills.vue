@@ -15,7 +15,7 @@
       />
       <SkillCard
         name="JavaScript / TypeScript"
-        :level="3"
+        :level="4"
         :description="[
           '主にWebアプリケーションのフロントエンド開発に使用。',
           '業務では、Vue.jsを用いることが多い。',

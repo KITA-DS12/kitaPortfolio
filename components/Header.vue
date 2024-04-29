@@ -61,7 +61,7 @@ const isCurrentPage = (path: string) => {
 
     &.current-page {
       .title {
-        color: #009688;
+        color: #3C765C;
       }
     }
   }
@@ -87,12 +87,12 @@ const isCurrentPage = (path: string) => {
     .title {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #333;
+      color: #888;
     }
 
     &:hover {
       .title {
-        color: #009688;
+        color: #3C765C;
       }
     }
   }

@@ -38,7 +38,7 @@ definePageMeta({
   }
 
   span {
-    color: #272;
+    color: #3C765C;
   }
 }
 

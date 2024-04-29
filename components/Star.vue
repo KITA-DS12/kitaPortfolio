@@ -17,6 +17,6 @@ const isActive = ref(props.active);
 </template>
 <style lang="scss" scoped>
 .star {
-  color: #2a2;
+  color: #3C765C;
 }
 </style>
