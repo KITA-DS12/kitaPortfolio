@@ -21,7 +21,7 @@
           '業務では、Vue.jsを用いることが多い。',
           'その他にも、バッチ処理やGoogle Apps Scriptの開発にも使用。',
         ]"
-        :tags="['Vue.js', 'Nuxt.js', 'React', 'Express', 'Nest.js']"
+        :tags="['Vue.js', 'Nuxt.js', 'React', 'Next.js', 'Express.js']"
         img="typescript"
       />
       <SkillCard
@@ -89,6 +89,7 @@
           'ACM',
           'CloudFront',
           'CloudWatch',
+          'DynamoDB',
           'EC2',
           'ECR',
           'ECS',

@@ -3,7 +3,7 @@
     <img class="profile-image" src="/public/my-face.png" alt="My face" />
     <div class="description">
       <ProfileTitle title="名前" />
-      <p>北 椋太 (きた りょうた)</p>
+      <p>北 椋太 / Ryota KITA</p>
       <p>
         2001年生まれ、愛知県出身。
         <br />
@@ -13,7 +13,30 @@
       <hr />
 
       <ProfileTitle title="趣味" />
-      <p>🎮 ゲーム / 🎨 イラスト / 🎸 ベース</p>
+      <p><b>🎮 Game</b></p>
+      <div class="content">
+        <p>RPGやFPS、シミュレーションなど、幅広いジャンルのゲームを好む。</p>
+      </div>
+      <p><b>🎨 Illustration</b></p>
+      <div class="content">
+        <p>
+          キャラクターデザインやイラスト制作を行う。
+          <br />
+          主にデジタルイラストを描くことが多い。
+        </p>
+      </div>
+      <p><b>🎸 Music</b></p>
+      <div class="content">
+        <p>
+          邦ロックやHIPHOP、ボカロ、アイドルなど、ジャンルを問わず好む。
+          <br />
+          また、趣味程度にアコースティックギターやエレキベースを演奏する。
+        </p>
+      </div>
+      <p><b>📚 Anime & Manga</b></p>
+      <div class="content">
+        <p>少年漫画やダークファンタジーを特に好む。</p>
+      </div>
 
       <hr />
 
