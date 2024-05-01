@@ -16,6 +16,75 @@
 
       <hr />
 
+      <ProfileTitle title="tech" />
+      <p><b>Programming</b></p>
+      <div class="content">
+        <p>
+          高校(工業科)でC言語を学び、プログラミングに興味を持つ。
+          <br />
+          大学ではPythonを用いたデータ分析や機械学習を学ぶ。
+          <br />
+          1〜2年次には、Pythonの公式ドキュメントを通読していた。
+          <br />
+          3年次からは、Webアプリの開発を通してJS/TSやGoを学ぶ。
+        </p>
+      </div>
+      <p><b>Develop</b></p>
+      <div class="content">
+        <p>主にWebアプリケーションの開発を行う。</p>
+        <p>
+          <b>【よく使う技術 (詳細は<a href="/skills">SKILLS</a>で) 】</b>
+        </p>
+
+        <div class="sub-content">
+          <p><b>Frontend</b></p>
+          <div class="sub-content">
+            <p>
+              - Nuxt.js (Vue.js) + TypeScript
+              <br />
+              - Next.js (React) + TypeScript
+            </p>
+          </div>
+          <p><b>Backend</b></p>
+          <div class="sub-content">
+            <p>
+              - Python ( FastAPI，Flask，Django, Streamlit )
+              <br />
+              - Go ( net/http，Gin，Fiber)
+              <br />
+              - Node.js ( Express.js )
+            </p>
+          </div>
+          <p><b>Infrastructure</b></p>
+          <div class="sub-content">
+            <p>
+              - Amazon Web Services
+              <br />
+              - Google Cloud Platform
+              <br />
+              - Terraform
+            </p>
+          </div>
+        </div>
+        <p>
+          その他にSwiftを用いたiOSアプリの開発や、
+          <br />
+          Unityを用いたゲーム開発も経験あり。
+        </p>
+      </div>
+      <p><b>Editor</b></p>
+      <div class="content">
+        <p>
+          vi / Vim / Neovim を愛している。
+          <br />
+          VSCode を開いても内部のターミナルでVimを使ってしまう。
+          <br />
+          元々は盆栽(vimrc)をしていたが、最近はAstroNvimを一部カスタムして使用。
+        </p>
+      </div>
+
+      <hr />
+
       <ProfileTitle title="interest" />
       <p><b>💻 Computer Science</b></p>
       <div class="content">
@@ -56,7 +125,7 @@
       <p><b>💻 Computer</b></p>
       <div class="content">
         <p><b>MacBook Pro (16-inch, 2019)</b></p>
-        <div class="content">
+        <div class="sub-content">
           <p>
             Intel Core i9 (2.3GHz/8コア)
             <br />
@@ -66,7 +135,7 @@
           </p>
         </div>
         <p><b>GALLERIA RM7C-R47</b></p>
-        <div class="content">
+        <div class="sub-content">
           <p>
             Intel Core i7-14700F (2.1GHz-5.3GHz/20コア/28スレッド)
             <br />
@@ -79,7 +148,7 @@
       <p><b>⌨️ Keyboard</b></p>
       <div class="content">
         <p><b>Moonlander Mark I</b></p>
-        <div class="content">
+        <div class="sub-content">
           <p>Dark Matter / Blank / Cherry MX Red</p>
         </div>
       </div>
@@ -112,5 +181,14 @@
 
 .content {
   padding-left: 1.5rem;
+}
+
+.sub-content {
+  margin-top: -0.5rem;
+  padding-left: 1rem;
+}
+
+a {
+  color: #3c765c;
 }
 </style>

@@ -34,7 +34,10 @@ const isCurrentPage = (path: string) => {
                   </button>
                 </div>
               </li>
-              <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/') }">
+              <li
+                @click="clickMenu"
+                :class="{ 'current-page': isCurrentPage('/') }"
+              >
                 <nuxt-link to="/">
                   <div class="nav_tab_container">
                     <span class="title">HOME</span>
@@ -42,7 +45,10 @@ const isCurrentPage = (path: string) => {
                   </div>
                 </nuxt-link>
               </li>
-              <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/profile') }">
+              <li
+                @click="clickMenu"
+                :class="{ 'current-page': isCurrentPage('/profile') }"
+              >
                 <nuxt-link to="/profile">
                   <div class="nav_tab_container">
                     <span class="title">PROFILE</span>
@@ -50,27 +56,36 @@ const isCurrentPage = (path: string) => {
                   </div>
                 </nuxt-link>
               </li>
-              <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/skills') }">
-                <nuxt-link to="/skills">
+              <li
+                @click="clickMenu"
+                :class="{ 'current-page': isCurrentPage('/career') }"
+              >
+                <nuxt-link to="/career">
                   <div class="nav_tab_container">
-                    <span class="title">SKILLS</span>
-                    <span class="sub_title">スキル</span>
+                    <span class="title">CAREER</span>
+                    <span class="sub_title">経歴</span>
                   </div>
                 </nuxt-link>
               </li>
-              <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/works') }">
-                <nuxt-link to="/works">
-                  <div class="nav_tab_container">
-                    <span class="title">WORKS</span>
-                    <span class="sub_title">制作物</span>
-                  </div>
-                </nuxt-link>
-              </li>
-              <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/awards') }">
+              <li
+                @click="clickMenu"
+                :class="{ 'current-page': isCurrentPage('/awards') }"
+              >
                 <nuxt-link to="/awards">
                   <div class="nav_tab_container">
                     <span class="title">AWARDS</span>
                     <span class="sub_title">受賞歴</span>
+                  </div>
+                </nuxt-link>
+              </li>
+              <li
+                @click="clickMenu"
+                :class="{ 'current-page': isCurrentPage('/skills') }"
+              >
+                <nuxt-link to="/skills">
+                  <div class="nav_tab_container">
+                    <span class="title">SKILLS</span>
+                    <span class="sub_title">スキル</span>
                   </div>
                 </nuxt-link>
               </li>
@@ -151,11 +166,11 @@ const isCurrentPage = (path: string) => {
 
     &.current-page {
       .title {
-        color: #5C967C;
+        color: #5c967c;
       }
 
       .sub_title {
-        color: #5C967C;
+        color: #5c967c;
       }
     }
   }
@@ -190,10 +205,9 @@ const isCurrentPage = (path: string) => {
     }
 
     &:hover {
-
       .title,
       .sub_title {
-        color: #5C967C;
+        color: #5c967c;
       }
     }
   }
