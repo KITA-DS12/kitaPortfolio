@@ -53,7 +53,7 @@
       </div>
 
       <div class="title">
-        <a href="https://prtimes.jp/main/html/rd/p/000000090.000067788.html">2022年3月、Open Hack U 2021 Online Vol.4 :
+        <a href="https://prtimes.jp/main/html/rd/p/000000090.000067788.html">2022年3月、Open Hack U 2021 Online vol.4 :
           優秀賞</a>
       </div>
       <div class="content">
@@ -67,7 +67,7 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1533383990786543617">2022年6月、技育CAMP Vol.3 : 努力賞</a>
+        <a href="https://x.com/geek_pjt/status/1533383990786543617">2022年6月、技育CAMP vol.3 : 努力賞</a>
       </div>
       <div class="content">
         <p>
@@ -80,7 +80,7 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1556208820472655873">2022年8月、技育CAMP Vol.7 : 優秀賞</a>
+        <a href="https://x.com/geek_pjt/status/1556208820472655873">2022年8月、技育CAMP vol.7 : 優秀賞</a>
       </div>
       <div class="content">
         <p>
@@ -93,7 +93,7 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1601873686361165824">2022年12月、技育CAMP Vol.9 : 努力賞</a>
+        <a href="https://x.com/geek_pjt/status/1601873686361165824">2022年12月、技育CAMP vol.9 : 努力賞</a>
       </div>
       <div class="content">
         <p>
@@ -106,7 +106,7 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1619640824538746882">2023年1月、技育CAMP Vol.10 : 努力賞</a>
+        <a href="https://x.com/geek_pjt/status/1619640824538746882">2023年1月、技育CAMP vol.10 : 努力賞</a>
       </div>
       <div class="content">
         <p>
@@ -121,7 +121,7 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1624703902364106752">2023年2月、技育CAMP Vol.11 : 最優秀賞</a>
+        <a href="https://x.com/geek_pjt/status/1624703902364106752">2023年2月、技育CAMP vol.11 : 最優秀賞</a>
       </div>
       <div class="content">
         <p>
@@ -134,18 +134,18 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/dhs_1212/status/1632001936831688706">2023年3月、技育CAMPアドバンス Vol.1 : 副大賞・企業賞</a>
+        <a href="https://x.com/dhs_1212/status/1632001936831688706">2023年3月、技育CAMPアドバンス vol.1 : 副大賞・企業賞</a>
       </div>
       <div class="content">
         <p>
-          技育CAMP Vol.10で開発したアプリケーションで企業賞を受賞。
+          技育CAMP vol.10で開発したアプリケーションで企業賞を受賞。
           <br />
-          技育CAMP Vol.11で開発したアプリケーションで副大賞を受賞。
+          技育CAMP vol.11で開発したアプリケーションで副大賞を受賞。
         </p>
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1639931068668313600">2023年3月、技育CAMP Vol.1 : 企業賞</a>
+        <a href="https://x.com/geek_pjt/status/1639931068668313600">2023年3月、技育CAMP vol.1 : 企業賞</a>
       </div>
       <div class="content">
         <p>
@@ -158,7 +158,7 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1647531693409189888">2023年4月、技育CAMP Vol.2 : 企業賞</a>
+        <a href="https://x.com/geek_pjt/status/1647531693409189888">2023年4月、技育CAMP vol.2 : 企業賞</a>
       </div>
       <div class="content">
         <p>
@@ -171,7 +171,7 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1660216577235750913">2023年5月、技育CAMP Vol.3 : 企業賞</a>
+        <a href="https://x.com/geek_pjt/status/1660216577235750913">2023年5月、技育CAMP vol.3 : 企業賞</a>
       </div>
       <div class="content">
         <p>
@@ -184,16 +184,16 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1672558300863565824">2023年6月、技育CAMPアドバンス Vol.2 : 企業賞</a>
+        <a href="https://x.com/geek_pjt/status/1672558300863565824">2023年6月、技育CAMPアドバンス vol.2 : 企業賞</a>
       </div>
       <div class="content">
         <p>
-          技育CAMP Vol.2で開発したアプリケーションで企業賞を受賞。
+          技育CAMP vol.2で開発したアプリケーションで企業賞を受賞。
         </p>
       </div>
 
       <div class="title">
-        <a href="https://x.com/dhs_1212/status/1680484498952310785">2023年7月、技育CAMP Vol.6 : 最優秀賞</a>
+        <a href="https://x.com/dhs_1212/status/1680484498952310785">2023年7月、技育CAMP vol.6 : 最優秀賞</a>
       </div>
       <div class="content">
         <p>
@@ -215,7 +215,7 @@
       </div>
 
       <div class="title">
-        <a href="https://x.com/geek_pjt/status/1697923368375521499">2023年9月、技育CAMPアドバンス Vol.3 : 副大賞</a>
+        <a href="https://x.com/geek_pjt/status/1697923368375521499">2023年9月、技育CAMPアドバンス vol.3 : 副大賞</a>
       </div>
       <div class="content">
         <p>
