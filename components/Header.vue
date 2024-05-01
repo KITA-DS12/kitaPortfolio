@@ -15,28 +15,40 @@ const isCurrentPage = (path: string) => {
 <template>
   <div class="menu">
     <ul>
-      <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/profile') }">
+      <li
+        @click="clickMenu"
+        :class="{ 'current-page': isCurrentPage('/profile') }"
+      >
         <nuxt-link to="/profile">
           <div class="nav_tab_container">
             <span class="title">PROFILE</span>
           </div>
         </nuxt-link>
       </li>
-      <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/skills') }">
+      <li
+        @click="clickMenu"
+        :class="{ 'current-page': isCurrentPage('/career') }"
+      >
+        <nuxt-link to="/career">
+          <div class="nav_tab_container">
+            <span class="title">CAREER</span>
+          </div>
+        </nuxt-link>
+      </li>
+      <li
+        @click="clickMenu"
+        :class="{ 'current-page': isCurrentPage('/skills') }"
+      >
         <nuxt-link to="/skills">
           <div class="nav_tab_container">
             <span class="title">SKILLS</span>
           </div>
         </nuxt-link>
       </li>
-      <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/works') }">
-        <nuxt-link to="/works">
-          <div class="nav_tab_container">
-            <span class="title">WORKS</span>
-          </div>
-        </nuxt-link>
-      </li>
-      <li @click="clickMenu" :class="{ 'current-page': isCurrentPage('/awards') }">
+      <li
+        @click="clickMenu"
+        :class="{ 'current-page': isCurrentPage('/awards') }"
+      >
         <nuxt-link to="/awards">
           <div class="nav_tab_container">
             <span class="title">AWARDS</span>

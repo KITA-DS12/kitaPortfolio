@@ -2,22 +2,28 @@
   <div class="container">
     <img class="profile-image" src="/public/my-face.png" alt="My face" />
     <div class="description">
-      <ProfileTitle title="名前" />
+      <ProfileTitle title="about" />
       <p><b>北 椋太 / Ryota KITA</b></p>
       <div class="content">
         <p>
           2001年生まれ、愛知県出身。
           <br />
           東京都在住のソフトウェアエンジニア。
+          <br />
+          主にWebアプリの開発(領域問わず)を行う。
         </p>
       </div>
 
       <hr />
 
-      <ProfileTitle title="趣味" />
-      <p><b>🎮 Game</b></p>
+      <ProfileTitle title="interest" />
+      <p><b>💻 Computer Scienc</b></p>
       <div class="content">
-        <p>RPGやFPS、シミュレーションなど、幅広いジャンルのゲームを好む。</p>
+        <p>
+          特にプログラミング言語そのものや、
+          <br />
+          アルゴリズム(特に群知能)に興味を持つ。
+        </p>
       </div>
       <p><b>🎨 Illustration</b></p>
       <div class="content">
@@ -35,62 +41,13 @@
           また、趣味程度にアコースティックギターやエレキベースを演奏する。
         </p>
       </div>
+      <p><b>🎮 Game</b></p>
+      <div class="content">
+        <p>RPGやFPS、シミュレーションなど、幅広いジャンルのゲームを好む。</p>
+      </div>
       <p><b>📚 Anime & Manga</b></p>
       <div class="content">
         <p>少年漫画やダークファンタジーを特に好む。</p>
-      </div>
-
-      <hr />
-
-      <ProfileTitle title="経歴" />
-
-      <p><b>2017年4月〜2020年3月 :</b></p>
-      <div class="content">
-        <p>
-          中部大学第一高等学校 機械電気システム科 に入学。
-          <br />
-          愛知県高等学校職業教育技術認定事業グランプリを受賞。
-        </p>
-      </div>
-
-      <p><b>2020年4月〜2024年3月 :</b></p>
-      <div class="content">
-        <p>
-          武蔵野大学 データサイエンス学部 に入学。
-          <br />
-          言語処理や進化計算アルゴリズムについての研究を行う。
-        </p>
-        <p>
-          Yahoo!JAPAN主催の「Hack U」や サポーターズ主催の「技育CAMP」など、
-          <br />
-          さまざまな学生ハッカソンに参加し、最優秀賞をはじめとする数々の賞を受賞。
-        </p>
-        <p>
-          在学中、勉強会を主催し、企画・運営および講師を務める。
-          <br />
-          また、学部内のエンジニア団体MUENTを立ち上げ、代表を務める。
-        </p>
-      </div>
-
-      <p><b>2023年4月〜 :</b></p>
-      <div class="content">
-        <p>技育プロジェクトのメンターとしてイベント運営に携わる。</p>
-      </div>
-
-      <p><b>2023年5月〜2024年3月 :</b></p>
-      <div class="content">
-        <p>
-          インターンにて、アドテクノロジー事業やゲームメディア事業に携わる。
-        </p>
-      </div>
-
-      <p><b>2024年4月〜 :</b></p>
-      <div class="content">
-        <p>
-          株式会社CARTA HOLDINGS に入社。
-          <br />
-          株式会社Lighthouse Studio にて、ゲームメディア事業に携わる。
-        </p>
       </div>
     </div>
   </div>
@@ -116,6 +73,6 @@
 }
 
 .content {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 </style>
