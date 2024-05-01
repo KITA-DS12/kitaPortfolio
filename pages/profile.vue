@@ -17,7 +17,7 @@
       <hr />
 
       <ProfileTitle title="interest" />
-      <p><b>💻 Computer Scienc</b></p>
+      <p><b>💻 Computer Science</b></p>
       <div class="content">
         <p>
           特にプログラミング言語そのものや、
@@ -48,6 +48,44 @@
       <p><b>📚 Anime & Manga</b></p>
       <div class="content">
         <p>少年漫画やダークファンタジーを特に好む。</p>
+      </div>
+
+      <hr />
+
+      <ProfileTitle title="device" />
+      <p><b>💻 Computer</b></p>
+      <div class="content">
+        <p><b>MacBook Pro (16-inch, 2019)</b></p>
+        <div class="content">
+          <p>
+            Intel Core i9 (2.3GHz/8コア)
+            <br />
+            32GB (DDR4-2666)
+            <br />
+            AMD Radeon Pro 5500M 8GB
+          </p>
+        </div>
+        <p><b>GALLERIA RM7C-R47</b></p>
+        <div class="content">
+          <p>
+            Intel Core i7-14700F (2.1GHz-5.3GHz/20コア/28スレッド)
+            <br />
+            32GB (DDR4-3200)
+            <br />
+            NVIDIA GeForce RTX 4070 12GB GDDR6X
+          </p>
+        </div>
+      </div>
+      <p><b>⌨️ Keyboard</b></p>
+      <div class="content">
+        <p><b>Moonlander Mark I</b></p>
+        <div class="content">
+          <p>Dark Matter / Blank / Cherry MX Red</p>
+        </div>
+      </div>
+      <p><b>🖱 Mouse</b></p>
+      <div class="content">
+        <p><b>ERGO M575 Wireless Trackball Mouse M575S</b></p>
       </div>
     </div>
   </div>

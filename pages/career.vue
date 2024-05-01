@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <div class="description">
-      <p><b>2017年4月、中部大学第一高等学校 機械電気システム科 に入学。</b></p>
+      <div class="title">
+        <p>2017年4月、中部大学第一高等学校 機械電気システム科 に入学。</p>
+      </div>
       <div class="content">
         <p>
           電気・電子・情報分野について学ぶ。
@@ -12,7 +14,9 @@
         </p>
       </div>
 
-      <p><b>2020年4月、武蔵野大学 データサイエンス学部 に入学。</b></p>
+      <div class="title">
+        <p>2020年4月、武蔵野大学 データサイエンス学部 に入学。</p>
+      </div>
       <div class="content">
         <p>
           データ・メディアコンテンツの分析・活用手法の学習や
@@ -59,22 +63,24 @@
         <p>学部内のエンジニア団体MUENTを立ち上げ、代表を務める。</p>
       </div>
 
-      <p><b>2023年4月、技育プロジェクトにメンターとして携わる。</b></p>
+      <div class="title">
+        <p>2022年4月、技育プロジェクトにメンターとして参加。</p>
+      </div>
       <div class="content">
         <p>
           株式会社サポーターズの運営する技育プロジェクトにて、
           <br />
-          技育CAMPのメンターや技育展にて運営の手伝いを行う。
+          技育CAMPのメンターや技育展の運営スタッフを行う。
         </p>
       </div>
-      <p>
-        <b>2023年5月、株式会社CARTA HOLDINGS に内定者インターンとして参加。</b>
-      </p>
+      <div class="title">
+        <p>2023年5月、株式会社CARTA HOLDINGS に内定者インターンとして参加。</p>
+      </div>
       <div class="content">
         <p>
           2023年5月から2023年9月まで、
           <br />
-          株式会社CARTA MARKETING FIRM(旧:株式会社Zucks)にて、
+          株式会社CARTA MARKETING FIRM(旧 : 株式会社Zucks)にて、
           <br />
           アドプラットフォームの開発に携わる。
         </p>
@@ -87,7 +93,9 @@
         </p>
       </div>
 
-      <p><b>2024年4月、株式会社CARTA HOLDINGS に入社。</b></p>
+      <div class="title">
+        <p>2024年4月、株式会社CARTA HOLDINGS に入社。</p>
+      </div>
       <div class="content">
         <p>
           株式会社Lighthouse Studio にて、
@@ -110,6 +118,12 @@
   width: 58vw;
   font-size: 0.85rem;
   color: #333;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #3c765c;
 }
 
 .content {
