@@ -3,12 +3,14 @@
     <img class="profile-image" src="/public/my-face.png" alt="My face" />
     <div class="description">
       <ProfileTitle title="名前" />
-      <p>北 椋太 / Ryota KITA</p>
-      <p>
-        2001年生まれ、愛知県出身。
-        <br />
-        東京都在住のソフトウェアエンジニア。
-      </p>
+      <p><b>北 椋太 / Ryota KITA</b></p>
+      <div class="content">
+        <p>
+          2001年生まれ、愛知県出身。
+          <br />
+          東京都在住のソフトウェアエンジニア。
+        </p>
+      </div>
 
       <hr />
 
