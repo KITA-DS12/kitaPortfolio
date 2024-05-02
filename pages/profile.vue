@@ -25,6 +25,9 @@
           Instagram :
           <a href="https://www.instagram.com/ryota.hs13">ryota.hs13</a>
           <br />
+          GitHub : <a href="https://github.com/KITA-DS12">KITA-DS12</a> (旧 :
+          <a href="https://github.com/RyotaKITA-12">RyotaKITA-12</a>)
+          <br />
           Qiita : <a href="https://qiita.com/kita_ds12">@kita_ds12</a>
         </p>
       </div>
