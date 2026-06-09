@@ -1,112 +1,63 @@
-<script setup lang="ts">
-import { ref } from "vue";
-import { useRoute } from "vue-router";
-
-const activeMenu = ref(false);
-const clickMenu = () => {
-  activeMenu.value = !activeMenu.value;
-};
-
-const route = useRoute();
-const isCurrentPage = (path: string) => {
-  return route.path === path;
-};
-</script>
 <template>
-  <div class="menu">
-    <ul>
-      <li
-        @click="clickMenu"
-        :class="{ 'current-page': isCurrentPage('/profile') }"
-      >
-        <nuxt-link to="/profile">
-          <div class="nav_tab_container">
-            <span class="title">PROFILE</span>
-          </div>
-        </nuxt-link>
-      </li>
-      <li
-        @click="clickMenu"
-        :class="{ 'current-page': isCurrentPage('/career') }"
-      >
-        <nuxt-link to="/career">
-          <div class="nav_tab_container">
-            <span class="title">CAREER</span>
-          </div>
-        </nuxt-link>
-      </li>
-      <li
-        @click="clickMenu"
-        :class="{ 'current-page': isCurrentPage('/awards') }"
-      >
-        <nuxt-link to="/awards">
-          <div class="nav_tab_container">
-            <span class="title">AWARDS</span>
-          </div>
-        </nuxt-link>
-      </li>
-      <li
-        @click="clickMenu"
-        :class="{ 'current-page': isCurrentPage('/skills') }"
-      >
-        <nuxt-link to="/skills">
-          <div class="nav_tab_container">
-            <span class="title">SKILLS</span>
-          </div>
-        </nuxt-link>
-      </li>
-    </ul>
-  </div>
+  <header class="site-header">
+    <div class="inner container">
+      <nuxt-link to="/" class="site-name">KITA Ryota</nuxt-link>
+      <nav class="nav">
+        <a href="#works">業務</a>
+        <a href="#personal">個人開発</a>
+        <a href="#studies">学生時代</a>
+        <a href="#output">記事</a>
+        <a href="#contact">リンク</a>
+      </nav>
+    </div>
+  </header>
 </template>
+
 <style scoped lang="scss">
-.menu {
-  width: 100%;
-  padding: 25px 0;
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(250, 250, 248, 0.85);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
 
-  @media (max-width: 767px) {
-    display: none;
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.site-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--color-accent);
   }
+}
 
-  li {
-    margin: 0 10px;
-    line-height: 1;
-
-    &.current-page {
-      .title {
-        color: #3c765c;
-      }
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    list-style: none;
-  }
+.nav {
+  display: flex;
+  gap: 1.25rem;
 
   a {
+    font-size: 0.85rem;
+    color: var(--color-muted);
     text-decoration: none;
-  }
-
-  .nav_tab_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-
-    .title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #999;
-    }
 
     &:hover {
-      .title {
-        color: #3c765c;
-      }
+      color: var(--color-accent);
     }
+  }
+
+  @media (max-width: 640px) {
+    display: none;
   }
 }
 </style>

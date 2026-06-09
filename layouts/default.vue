@@ -1,8 +1,15 @@
 <template>
-  <main>
-    <Nav />
+  <div class="site">
     <Header />
-    <slot />
+    <main class="main">
+      <slot />
+    </main>
     <Footer />
-  </main>
+  </div>
 </template>
+
+<style scoped lang="scss">
+.main {
+  padding-top: 2rem;
+}
+</style>
