@@ -19,6 +19,12 @@
           </a>
         </h3>
         <p class="project-summary">音楽好きのためのプロフィールアプリ</p>
+        <img
+          class="project-image"
+          src="/images/otopi.png"
+          alt="Otopi のランディングページのスクリーンショット"
+          loading="lazy"
+        />
         <p>
           好きな曲・アルバムを壁一面に並べて音楽プロフィールを作るサービス。
           Weekly Picks（今週のお気に入り 5 曲）、Stocks（気になった曲の保存）、
@@ -47,6 +53,12 @@
         <p class="project-summary">
           音楽の布教をテーマにした匿名投稿サービス
         </p>
+        <img
+          class="project-image"
+          src="/images/otopost.png"
+          alt="おとぽすとの投稿画面のスクリーンショット"
+          loading="lazy"
+        />
         <p>
           質問箱のように箱の URL を SNS でシェアすると、受け取った側が
           iTunes API で曲を検索して匿名で投稿できる。届いた楽曲は
@@ -73,6 +85,12 @@
         <p class="project-summary">
           四字熟語で新年の運試しができるスロット
         </p>
+        <img
+          class="project-image"
+          src="/images/yojislots.png"
+          alt="2026 四字熟語スロットのプレイ画面のスクリーンショット"
+          loading="lazy"
+        />
         <p>
           4 リール漢字スロット。30 種以上の四字熟語と「二零二六」のジャック
           ポット、当たり時の花火演出、動的 OGP 画像生成によるシェア最適化を
@@ -92,6 +110,12 @@
         <p class="project-summary">
           同じ大学の学生同士で作業通話をするためのアプリ
         </p>
+        <img
+          class="project-image"
+          src="/images/mucri.png"
+          alt="mucri のスペース内チャット・通話画面のスクリーンショット"
+          loading="lazy"
+        />
         <p>
           スペースを作って、フレンドとチャットや通話ができるアプリ。在学中
           の学生が、お互いに集まらなくても一緒に作業時間を共有できる
@@ -138,6 +162,17 @@
 .project-summary {
   color: var(--color-muted);
   margin-bottom: 0.75rem;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  background-color: var(--color-code-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin: 1rem 0;
 }
 
 .stack {
