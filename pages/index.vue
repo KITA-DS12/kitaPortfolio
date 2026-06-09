@@ -5,7 +5,7 @@
     <Works />
     <PersonalProjects />
     <Hackathon />
-    <Output />
+    <Articles />
     <Stack />
     <History />
     <Contact />
