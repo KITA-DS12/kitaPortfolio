@@ -1,7 +1,7 @@
 <template>
   <section id="output" class="section">
     <div class="container">
-      <h2 class="section-title">公開している記事・発表</h2>
+      <h2 class="section-title">公開している記事</h2>
       <ul class="articles">
         <li v-for="article in articles" :key="article.url" class="article">
           <a :href="article.url" target="_blank" rel="noopener">
@@ -39,6 +39,12 @@ const articles: Article[] = [
     title: "ハッカソンにおける技術の「外側」",
     source: "note",
     url: "https://note.com/rkita_12/n/ndaa6c199c713",
+  },
+  {
+    date: "2025-06-28",
+    title: "Web 開発入門講座 - シンプル投稿アプリで学ぶ基本概念",
+    source: "GitHub",
+    url: "https://github.com/KITA-DS12/web-app-simple/blob/main/lecture-materials.md",
   },
   {
     date: "2025-04-25",
