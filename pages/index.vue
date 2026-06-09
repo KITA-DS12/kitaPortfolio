@@ -2,9 +2,9 @@
   <div>
     <Hero />
     <History />
-    <Studies />
     <Works />
     <PersonalProjects />
+    <Studies />
     <Articles />
     <Stack />
     <Contact />

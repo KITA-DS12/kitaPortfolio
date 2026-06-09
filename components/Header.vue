@@ -6,7 +6,7 @@
         <a href="#works">仕事</a>
         <a href="#personal">個人開発</a>
         <a href="#output">記事</a>
-        <a href="#contact">連絡先</a>
+        <a href="#contact">リンク</a>
       </nav>
     </div>
   </header>

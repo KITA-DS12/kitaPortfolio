@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title">連絡先</h2>
+      <h2 class="section-title">各種リンク</h2>
       <ul class="links">
         <li v-for="link in links" :key="link.url">
           <span class="label">{{ link.label }}</span>
