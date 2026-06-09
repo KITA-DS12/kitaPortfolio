@@ -3,8 +3,9 @@
     <div class="inner container">
       <nuxt-link to="/" class="site-name">KITA Ryota</nuxt-link>
       <nav class="nav">
-        <a href="#works">仕事</a>
+        <a href="#works">業務</a>
         <a href="#personal">個人開発</a>
+        <a href="#studies">学生時代</a>
         <a href="#output">記事</a>
         <a href="#contact">リンク</a>
       </nav>

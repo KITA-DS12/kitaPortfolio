@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="studies" class="section">
     <div class="container">
       <h2 class="section-title">学生時代</h2>
 
