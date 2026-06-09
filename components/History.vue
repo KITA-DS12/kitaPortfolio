@@ -24,10 +24,7 @@
           </li>
           <li>
             <time>2024</time>
-            <span>
-              武蔵野大学 データサイエンス学部 卒業<br />
-              株式会社 CARTA HOLDINGS 入社
-            </span>
+            <span>株式会社 CARTA HOLDINGS 入社</span>
           </li>
         </ul>
       </div>
