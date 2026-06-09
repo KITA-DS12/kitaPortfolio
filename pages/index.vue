@@ -6,7 +6,6 @@
     <PersonalProjects />
     <Studies />
     <Articles />
-    <Stack />
     <Contact />
   </div>
 </template>
