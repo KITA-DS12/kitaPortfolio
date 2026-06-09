@@ -83,6 +83,25 @@
           Google Cloud Run
         </p>
       </article>
+
+      <article class="project">
+        <h3 class="project-title">
+          mucri
+          <span class="project-url muted">URL 非公開</span>
+        </h3>
+        <p class="project-summary">
+          同じ大学の学生同士で作業通話をするためのアプリ
+        </p>
+        <p>
+          スペースを作って、フレンドとチャットや通話ができるアプリ。在学中
+          の学生が、お互いに集まらなくても一緒に作業時間を共有できる
+          ことを意図して作った。
+        </p>
+        <p class="stack">
+          使った技術: Remix / React / TypeScript / Tailwind CSS / Firebase /
+          SkyWay SDK
+        </p>
+      </article>
     </div>
   </section>
 </template>
