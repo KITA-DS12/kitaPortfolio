@@ -5,7 +5,6 @@
       <nav class="nav">
         <a href="#works">仕事</a>
         <a href="#personal">個人開発</a>
-        <a href="#hackathon">ハッカソン</a>
         <a href="#output">記事</a>
         <a href="#contact">連絡先</a>
       </nav>

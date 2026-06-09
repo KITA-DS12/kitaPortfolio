@@ -5,7 +5,6 @@
     <Studies />
     <Works />
     <PersonalProjects />
-    <Hackathon />
     <Articles />
     <Stack />
     <Contact />
