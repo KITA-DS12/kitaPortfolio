@@ -1,12 +1,12 @@
 <template>
   <section id="works" class="section">
     <div class="container">
-      <h2 class="section-title">これまでに取り組んだ仕事</h2>
+      <h2 class="section-title">業務での主な取り組み</h2>
 
       <article class="work">
         <h3 class="work-title">
           海外向けゲーム DB サービスの企画から運用まで
-          <span class="meta">新卒 1 年目 / 2024 年 10 月</span>
+          <span class="meta">新卒 1 年目 後半</span>
         </h3>
         <p>
           新規事業として展開する海外向けゲーム攻略サイトの中で、特定タイトル
@@ -55,7 +55,7 @@
       <article class="work">
         <h3 class="work-title">
           認証基盤の改修
-          <span class="meta">新卒 2 年目 / 2025 年 5 月</span>
+          <span class="meta">新卒 2 年目 前半</span>
         </h3>
         <p>
           社内の各サービスで利用している SSO で、ログイン時にユーザーが複数
@@ -102,7 +102,7 @@
       <article class="work">
         <h3 class="work-title">
           チームでの AI 活用の主導
-          <span class="meta">新卒 2 年目〜 / 2025 年 4 月</span>
+          <span class="meta">新卒 2 年目 前半〜</span>
         </h3>
         <p>
           社内の開発リソースが限られる中で、AI を最大限活用していく方針が
@@ -158,7 +158,7 @@
       <article class="work">
         <h3 class="work-title">
           ポイントサービスの立ち上げ
-          <span class="meta">新卒 2〜3 年目 / 2025 年 2 月〜</span>
+          <span class="meta">新卒 2 年目〜 3 年目 前半</span>
         </h3>
         <p>
           社内の主要事業（ゲーム攻略メディア）が広告収益に依存している状態
@@ -217,6 +217,51 @@
           使った技術: Go (Gin) / TypeScript / React / MUI / PostgreSQL /
           Firebase Authentication / Casbin / OpenAPI / Terraform /
           Google Cloud / Docker
+        </p>
+      </article>
+
+      <article class="work">
+        <h3 class="work-title">
+          退会機能の横断実装
+          <span class="meta">新卒 3 年目 前半</span>
+        </h3>
+        <p>
+          複数の社内サービスにまたがる退会処理を、認証基盤を起点として
+          backchannel 通知で各サービスに伝達する仕組みを設計・実装した。
+        </p>
+        <p>
+          最大のポイントは、個人情報の取り扱いとサービス間の整合性をどう
+          設計するかだった。退会後はユーザー画面から即座に消す必要がある
+          一方、ポイントの取引履歴や監査用のデータは一定期間残す必要が
+          ある。即時匿名化、30 日後の物理削除、1 年後・3 年後の段階的
+          削除、というデータ寿命を個別に設計し、サービスごとに処理内容を
+          定義した。
+        </p>
+        <ul>
+          <li>
+            認証基盤に退会 UI を実装し、OIDC フローを経由して退会処理を
+            実行
+          </li>
+          <li>
+            backchannel 通知の送信側（認証基盤）と受信側（4 つの関連
+            サービス）をそれぞれ実装
+          </li>
+          <li>
+            受信側では匿名化、ポイント失効、サブスクリプション解約など、
+            サービス特有の処理を実行
+          </li>
+          <li>
+            リリース順序を「受信側 → 送信側 → バッチ」に固定し、通知が
+            届いた時点で必ず受信側が処理できる状態を担保
+          </li>
+          <li>
+            backchannel 失敗時の手動再実行 Cloud Run Job を用意し、Slack
+            通知からオペレーターがリカバリできる設計に
+          </li>
+        </ul>
+        <p class="stack">
+          使った技術: TypeScript / Go / OIDC / Firebase Authentication /
+          Google Cloud Storage / Cloud Run / PostgreSQL / Slack
         </p>
       </article>
     </div>
