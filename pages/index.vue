@@ -1,7 +1,6 @@
 <template>
   <div>
     <Hero />
-    <Now />
     <History />
     <Studies />
     <Works />
