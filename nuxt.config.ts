@@ -22,13 +22,13 @@ export default defineNuxtConfig({
           key: "description",
           name: "description",
           content:
-            "武蔵野大学データサイエンス学部出身のWebエンジニア、北椋太のポートフォリオサイト。ハッカソンの参加及び運営・メンター経験を活かし、Web開発プロジェクトに携わる。",
+            "北椋太 / Web Engineer。株式会社 CARTA HOLDINGS でゲームメディアやポイントサービスの開発に、企画から実装、運用まで一気通貫で携わるフルサイクルエンジニア。AI 活用やハッカソンへの参加・運営にも取り組んでいる。",
         },
         {
           key: "keywords",
           name: "keywords",
           content:
-            "Webエンジニア,データサイエンス,武蔵野大学,ハッカソン,開発,プログラミング,テクノロジ,IT",
+            "北椋太,KITA Ryota,Web Engineer,フルサイクル,CARTA HOLDINGS,ポートフォリオ,AI 活用,Claude Code,Devin,ハッカソン",
         },
         {
           key: "og:site_name",
@@ -46,7 +46,7 @@ export default defineNuxtConfig({
           key: "og:description",
           property: "og:description",
           content:
-            "武蔵野大学データサイエンス学部出身のWebエンジニア、北椋太のポートフォリオサイト。ハッカソンの参加及び運営・メンター経験を活かし、Web開発プロジェクトに携わる。",
+            "北椋太 / Web Engineer。株式会社 CARTA HOLDINGS でゲームメディアやポイントサービスの開発に、企画から実装、運用まで一気通貫で携わるフルサイクルエンジニア。",
         },
         {
           key: "og:locale",
