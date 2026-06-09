@@ -15,12 +15,19 @@
         </div>
         <ul class="timeline">
           <li>
+            <time>2017</time>
+            <span>中部大学第一高等学校 機械電気システム科 入学</span>
+          </li>
+          <li>
             <time>2020</time>
-            武蔵野大学 データサイエンス学部 入学
+            <span>武蔵野大学 データサイエンス学部 入学</span>
           </li>
           <li>
             <time>2024</time>
-            武蔵野大学 データサイエンス学部 卒業 / 株式会社 CARTA HOLDINGS 入社
+            <span>
+              武蔵野大学 データサイエンス学部 卒業<br />
+              株式会社 CARTA HOLDINGS 入社
+            </span>
           </li>
         </ul>
       </div>

@@ -2,12 +2,13 @@
   <div>
     <Hero />
     <Now />
+    <History />
+    <Studies />
     <Works />
     <PersonalProjects />
     <Hackathon />
     <Articles />
     <Stack />
-    <History />
     <Contact />
   </div>
 </template>
