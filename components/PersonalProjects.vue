@@ -54,6 +54,22 @@
 
       <article class="project">
         <h3 class="project-title">
+          <span>AntFloor</span>
+          <a class="project-url" href="https://github.com/KITA-DS12/antfloor" target="_blank" rel="noopener">github.com/KITA-DS12/antfloor</a>
+        </h3>
+        <p class="project-summary">アントコロニー最適化による飲食店フロア改善シミュレータ</p>
+        <img
+          class="project-image"
+          src="/images/antfloor.png"
+          alt="AntFloor のシミュレーション画面のスクリーンショット"
+          loading="lazy"
+        />
+        <p>ACO（Ant Colony Optimization）のフェロモン堆積・蒸発・確率的経路選択を使って、飲食店フロアの動線効率と混雑を可視化する Web アプリ。グリッドでフロアを編集し、エージェントを走らせると効率・混雑のヒートマップと推奨ルートが描画され、停止すると蓄積データから改善案が自動生成される。</p>
+        <p class="stack">使った技術: Next.js / React / TypeScript / Tailwind CSS / Canvas 2D</p>
+      </article>
+
+      <article class="project">
+        <h3 class="project-title">
           <span>mucri</span>
           <span class="project-url muted">URL 非公開</span>
         </h3>
