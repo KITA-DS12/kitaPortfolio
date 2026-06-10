@@ -1,8 +1,8 @@
 <template>
   <section id="personal" class="section">
     <div class="container">
-      <h2 class="section-title">個人開発</h2>
-      <p class="lead">業務以外でも、自分の好きなテーマで Web アプリを継続的に作っている。</p>
+      <h2 class="section-title">趣味開発</h2>
+      <p class="lead">業務以外でも、趣味として自分の好きなテーマで Web アプリを継続的に作っている。ハッカソンでチームと作ったものも含む。</p>
 
       <article class="project">
         <h3 class="project-title">
