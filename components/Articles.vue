@@ -41,6 +41,13 @@ const articles: Article[] = [
     url: "https://note.com/rkita_12/n/ndaa6c199c713",
   },
   {
+    date: "2025-12-08",
+    title:
+      "AI 活用を目指したら、泥臭い「開発プロセスの見直し」が必要になった話",
+    source: "CARTA Tech Blog",
+    url: "https://techblog.cartaholdings.co.jp/entry/ai-agent-process-improvement",
+  },
+  {
     date: "2025-06-28",
     title: "Web 開発入門講座 - シンプル投稿アプリで学ぶ基本概念",
     source: "GitHub",
