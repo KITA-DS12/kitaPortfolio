@@ -1,35 +1,46 @@
-# Content v2 Minimal Starter
+# kitaPortfolio
 
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+北椋太 / KITA Ryota の個人ポートフォリオサイト。
 
-## Setup
+公開URL: <https://xn--djr.net/>
 
-Make sure to install the dependencies:
+## 技術スタック
 
-```bash
-make install
-```
+- **Framework**: Nuxt 3
+- **Content**: `@nuxt/content`
+- **Styling**: SCSS
+- **Infra**: AWS S3 + CloudFront + Route 53 + ACM（Terraform 管理）
 
-## Development Server
-
-Start the development server on <http://localhost:3000>
-
-```bash
-make dev
-```
-
-## Production
-
-Build the application for production:
+## ローカル開発
 
 ```bash
-make build
+make install   # 依存インストール（bun）
+make dev       # http://localhost:3000
 ```
 
-Locally preview production build:
+## ビルド・デプロイ
 
 ```bash
-make preview
+make build     # 静的サイトを生成
+make deploy    # S3 同期 + CloudFront キャッシュ無効化
 ```
 
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+インフラの初期構築は `terraform/` 配下の HCL を参照。
+
+## ディレクトリ
+
+```
+kitaPortfolio/
+├── pages/          # ルーティング（index.vue のみ）
+├── components/     # Hero / Works / Studies / History / Articles 等
+├── layouts/        # レイアウト
+├── assets/         # 画像・SCSS
+├── server/         # サーバーサイド設定
+├── terraform/      # AWS インフラ（S3 / CloudFront / Route 53）
+└── nuxt.config.ts
+```
+
+## ライセンス
+
+- **ソースコード**: MIT License（[LICENSE](./LICENSE) 参照）
+- **コンテンツ**: 文章・画像・デザイン・経歴/業務記述は著者の個人表現物であり、**All Rights Reserved**。無断転載・流用はご遠慮ください
