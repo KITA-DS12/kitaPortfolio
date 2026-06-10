@@ -2,14 +2,8 @@
   <section class="hero">
     <div class="container">
       <h1 class="name">北椋太</h1>
-      <p class="tagline">
-        Web Engineer / フルサイクルで企画から実装、運用まで
-      </p>
-      <p class="intro">
-        2001 年生まれ、愛知県出身。CARTA HOLDINGS でゲームメディアや
-        ポイントサービスの開発を、企画から実装、運用まで一気通貫で担当して
-        いる。最近はチームでの AI 活用にも力を入れている。
-      </p>
+      <p class="tagline">Web Engineer / フルサイクルで企画から実装、運用まで</p>
+      <p class="intro">2001 年生まれ、愛知県出身。CARTA HOLDINGS でゲームメディアやポイントサービスの開発を、企画から実装、運用まで一気通貫で担当している。最近はチームでの AI 活用にも力を入れている。</p>
     </div>
   </section>
 </template>
