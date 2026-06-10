@@ -6,6 +6,22 @@
 
       <article class="project">
         <h3 class="project-title">
+          <span>ツルリン</span>
+          <a class="project-url" href="https://tsururin.mu-k.net/#how" target="_blank" rel="noopener">tsururin.mu-k.net/#how</a>
+        </h3>
+        <p class="project-summary">氷上スライドパズル挑戦状</p>
+        <img
+          class="project-image"
+          src="/images/tsururin.png"
+          alt="ツルリンのプロモ画像（ペンギンが氷の盤面を滑ってゴールに止まる様子）"
+          loading="lazy"
+        />
+        <p>スワイプした方向に何かにぶつかるまで滑り続け、ゴールに「ぴったり停止」させるパズル。毎日 0 時に全員共通の 1 問が出るデイリーモード、新タイルが順番に登場する全 50 ステージ、自作問題を URL だけで配れて作者の手数と勝負する挑戦状モードを備えている。</p>
+        <p class="stack">使った技術: HTML / CSS / JavaScript（バニラ）/ AWS S3 / CloudFront / Route 53</p>
+      </article>
+
+      <article class="project">
+        <h3 class="project-title">
           <span>Otopi</span>
           <a class="project-url" href="https://otopi.app" target="_blank" rel="noopener">otopi.app</a>
         </h3>
