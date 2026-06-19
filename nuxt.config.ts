@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const GA_MEASUREMENT_ID = "G-JDNY3V3CDZ";
+const isProd = process.env.NODE_ENV === "production";
+
 export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
@@ -19,6 +22,17 @@ export default defineNuxtConfig({
       link: [
         { rel: "canonical", href: "https://xn--djr.net/" },
       ],
+      script: isProd
+        ? [
+            {
+              src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`,
+              async: true,
+            },
+            {
+              innerHTML: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}');`,
+            },
+          ]
+        : [],
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
