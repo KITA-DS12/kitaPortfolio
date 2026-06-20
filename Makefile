@@ -1,3 +1,5 @@
+NUXI := node node_modules/@nuxt/cli/bin/nuxi.mjs
+
 .PHONY: help
 help:
 	@echo "Available commands:"
@@ -14,7 +16,7 @@ help:
 .PHONY: info
 info:
 	@echo "Showing info..."
-	bun run nuxi info
+	$(NUXI) info
 
 .PHONY: install
 install:
@@ -24,32 +26,32 @@ install:
 .PHONY: dev
 dev:
 	@echo "Starting development server..."
-	bun run nuxi dev
+	$(NUXI) dev
 
 .PHONY: build
 build:
 	@echo "Building..."
-	bun run nuxi build
+	$(NUXI) build
 
 .PHONY: preview
 preview:
 	@echo "Starting preview server..."
-	bun run nuxi preview
+	$(NUXI) preview
 
 .PHONY: generate
 generate:
 	@echo "Generating..."
-	bun run nuxt generate
+	$(NUXI) generate
 
 .PHONY: typecheck
 typecheck:
 	@echo "Typechecking..."
-	bun run nuxi typecheck
+	$(NUXI) typecheck
 
 .PHONY: upgrade
 upgrade:
 	@echo "Upgrading..."
-	bun run nuxi upgrade
+	$(NUXI) upgrade
 
 .PHONY: upload
 upload:

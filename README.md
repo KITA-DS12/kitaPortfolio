@@ -13,10 +13,10 @@
 
 ## ローカル開発
 
-Node のバージョンは `.nvmrc` に従う（Node 22 系では Nuxt 3.9.3 のプリレンダーが失敗するため Node 20 を使用）。
+Node のバージョンは `.mise.toml` に従う（Node 22 系では Nuxt 3.9.3 のプリレンダーが失敗するため Node 20 を使用）。
 
 ```bash
-nvm use        # .nvmrc に従い Node 20 を有効化
+mise install   # .mise.toml に従い Node 20 を有効化
 make install   # 依存インストール（bun）
 make dev       # http://localhost:3000
 ```
