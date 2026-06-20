@@ -8,8 +8,10 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.10.0",
-    "nuxt": "^3.9.0"
+    "@types/node": "^26.0.0",
+    "nuxt": "^4.4.8",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.5"
   },
   "dependencies": {
     "sass": "^1.69.7"
